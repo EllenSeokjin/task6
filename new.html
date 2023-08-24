@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit) minmax(100px);
+    grid-auto-rows: 100px;
+    grid-auto-flow: row;
+    grid-gap: 2px;
+   
+}
+.header{
+    background-color: rgb(43, 220, 226);
+    grid-column: 1/4;
+    text-align: center;
+}
+.section{
+    background-color: rgb(226, 43, 153);
+    grid-column: span 2;
+    text-align: center;
+}
+.section2{
+    background-color: rgb(211, 226, 43);
+    grid-column: span 1;
+    text-align: center;
+    align-self: baseline;
+}
+.footer{
+    background-color: rgb(138, 43, 226);
+    grid-column: 1/4;
+    text-align: right;
+    align-self: baseline;
+    
+}
+    </style>
+  
+</head>
+<body>
+  <div class="container">
+    <div class="header">header</div>
+    <div class="section">section</div>
+    <div class="section2">Section2</div>
+    <div class="footer">footer
+    </div>
+  </div>
+
+</body>
+</html>
